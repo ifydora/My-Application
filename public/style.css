@@ -1,0 +1,354 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+main {
+    flex-flow: 1;
+}
+header{
+    background-color:#780000;
+    padding: 20;
+    color: white;
+    text-align: center;
+    font-size: 30;
+    font-family: 'Satisfy', cursive;
+}
+.login-box {
+    width: 400px;
+    border: 1px solid #780000;
+    padding: 20px 50px;
+    text-align: center;
+    /*background: rgba(255, 255, 255, 0.7);*/
+    background-color: white;
+    border-radius: 5px;
+}
+.login-box h1 {
+    text-align: left;
+}
+
+.login-box-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background: url('./images/login-background-color.jpg');
+    background-position: center;
+    background-size: contain;
+    
+}
+input[type=text], input[type=password], input[type=email] {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #780000;
+    width: 100%;
+    margin-bottom: 10px;
+}
+.login-button-color {
+    background-color: #780000;
+    color: white;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    margin: auto;
+    display: block;
+
+}
+/* home page */ 
+.logo-area {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    padding: 5px;
+    font-size: 25px;
+    font-family: 'Dancing Script', cursive;
+    border-bottom: 0.5px solid #780000;
+
+}
+.logo-area a {
+    text-decoration: none;
+    color: black;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    text-align: center;
+    font-weight: bold;    
+}
+h1 {
+    margin: 0;
+    text-decoration: none;
+        
+}
+nav li {
+    margin-left: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    position: relative;  
+}
+nav a {
+    text-decoration: none;
+    color: #780000;
+}
+nav{
+    align-items: center;   
+}
+nav ul li a {
+    text-decoration: none;
+    color: #780000;
+    font-weight: bold;
+    font-size: 16px;
+}
+.dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #780000;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    z-index: 1;
+    width: 150px;
+}
+nav ul li:hover .dropdown {
+    display: block;
+}
+.dropdown a {
+    display: block;
+    padding: 10px;
+    color: white;
+}
+.slogan {
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: #780000;
+    padding: 30px;
+    font-size: 10px;
+}
+.image-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 80%;
+    padding: 0 120px;
+    
+}
+.image-card {
+    text-align: center;
+    margin-right: 20px;
+}
+.image-card img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+}
+.image-label {
+    margin-top: 8px;
+    font-weight: bold;
+}
+.image-card:hover img {
+    opacity: 0.7;
+}
+.image-label {
+    background-color: #000000;
+    color: white;
+    padding: 10px;
+}
+.circle-image-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 20px;
+}
+.circle-image {
+    width: 100px;
+    height: 100px;
+    border-radius: 50px;
+   
+    text-align: center;
+}
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+}
+.circle-image-label {
+   margin-top: 8px;
+   color: black;
+   font-weight: bold;
+}
+.search-container {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: center;
+    padding: 30;
+    height: 50px;
+    
+}
+.search-container input {
+    padding: 17px;
+    border: 1px solid #780000;
+    border-radius: 5px;
+    width: 500px;
+    font-size: 15px;
+    height: 100%;
+    
+   
+}
+.search-container button {
+    padding: 17px;
+    margin-left: 10px;
+    background-color: #780000;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 200px;
+    font-size: 15px;
+    height: 100%;
+}
+.search-container button:hover {
+    background-color: #780000;
+}
+.or-text {
+    margin: 0 10px;
+    color: #780000;
+    font-size: 20px;
+}
+.search-icon {
+    margin-left: 10px;
+    color: #780000;
+}
+.recipes-container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 2500px;
+    margin: 0 auto;
+}
+.recipes-collection {
+    width: 40%;
+    padding: 20px;
+    background-color: antiquewhite;
+}
+.recipes-collection h2 {
+    color: #000000;
+}
+.recipes-collection ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+.recipes-collection li {
+    margin-bottom: 10px;
+}
+.chef-images {
+    width: 1300px;
+    height: 700px;
+}
+.the-latest {
+    width: 50%;
+}
+.post {
+    max-width: 600px;
+    margin: 20px 0;
+    border: 1px solid #000000;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    width: 100%;
+}
+img {
+    width: 40%;
+    height: auto;
+}
+.post-content {
+    padding: 20px;
+    width: 60%;
+}
+h2 {
+    color: #000000;
+}
+.post-date {
+    color: #000000;
+    font-style: italic;
+} 
+ 
+.recipe-link {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 25px;
+        
+}
+/* Recipes page */
+
+.recipes-list {
+    padding: 20px;
+    color: white;
+    text-align: center;
+    color: #000000;
+}
+.recipes-list p {
+    font-size: 20px;
+}
+.recipes-image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 0 120px;
+}
+
+.recipes-image-card {
+    text-align: center;
+    margin-right: 20px;
+}
+.recipes-image-card img {
+    max-width: 150px;
+    width: 100%;
+    transition: opacity 0.3s ease;
+}
+.recipes-image-label {
+    margin-top: 5px;
+    color: #000000;
+    padding: 10px;
+}
+.recipes-image-card:hover img {
+    opacity: 0.7;
+}
+.recipes-image-card a {
+    text-decoration: none;
+}
+.footer-logo h1 {
+    padding: 10px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    font-family: 'Dancing Script', cursive;
+}
+
+/* vegetarian page*/
+.vegetarian-details-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.vegeterian-details {
+    max-width: 700px;
+    width: 100%;
+       
+}
+.comments-container {
+    color: #000000;
+    margin-top: 20px;
+}
+.comment {
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 10px;
+}

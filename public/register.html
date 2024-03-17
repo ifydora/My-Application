@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+ 
+    </head>
+    <body>
+        <header>
+            <div class="logo">Your Best Recipes</div>
+        </header>
+        <main>
+            <div class="login-box-container">
+                <div class="login-box">
+                    <h1>Register</h1>
+                    <form action="/register" method="post" id="registerForm">
+                        <input type="email" id="emailInput" name="email" placeholder="email">
+                        <input type="text" id="usernameInput" name="username" placeholder="username">
+                        <input type="password" id="passwordInput" name="password" placeholder="password">
+                        <button type="submit" class="login-button-color" onclick="performRegistration(event)">Create account</button>
+                    </form>
+                    <a href="login.html">Login to existing account</a>
+            </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="script.js"></script> 
+    </body>
+</html>
+
+
+
+fetch(`/post-comments/${post.id}`)
+.then(response => response.json())
+.then(comments => {
+    console.log('Fetched comments:', comments);
+    comments.forEach(comment => {
+        const commentElement = document.createElement('div');
+        commentElement.textContent = `${comment.username}: ${comment.content}`;
+        commentsContainer.appendChild(commentElement);
+    });
+});

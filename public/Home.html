@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Satisfy&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+      
+    </head>
+    <body>
+        <header>
+            <div class="logo">Your Best Recipes</div>
+        </header>
+        <main>
+            <div class="logo-area">
+                <a href="Home.html">
+                    <h1>Taste Bud Bliss</h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li> <a href="Home.html">Home</a></li>
+                        <li> 
+                            <a href="recipes.html">Recipes</a>
+                        <div class="dropdown">
+                            <a href="recipes.html">view all recipes</a>
+                            <a href="#">vegan recipes</a>
+                            <a href="#">Meal Prep</a>
+                            <a href="#">Quick and Easy</a>
+                            <a href="#">Instant Recipes</a>
+                            <a href="#">Soup Recipes</a>
+                            <a href="#">Most Popular Recipes</a>
+                        </div>
+                    </li>
+                        <li> <a href="blog.html">Blog</a></li>
+                        <li> <a href="login.html">Log In</a></li>
+                        <li> <a href="register.html">Register</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+           <div class="slogan">
+            <h1>Taste adventure with every culinary venture.............</h1>
+        </div> 
+           
+        <div class="image-container">
+            <div class="image-card">
+                <a href="#">
+                <img src="./images/soups.jpg" alt="image 1">
+            </a>
+                <div class="image-label">Soups</div>
+            </div>
+
+            <div class="image-card">
+                <a href="#">
+                <img src="./images/vegetrian.jpg" alt="image 2">
+            </a>
+                <div class="image-label">Vegeterian</div>
+            </div>
+
+            <div class="image-card">
+                <a href="#">
+                <img src="./images/5 ingredients.jpg" alt="image 3">
+            </a>
+                <div class="image-label">5 ingredients</div>
+            </div>
+
+            <div class="image-card">
+                <a href="#">
+                <img src="./images/slow cooker.jpg" alt="image 4">
+            </a>
+                <div class="image-label">Slow cooker</div>
+            </div>
+       
+        </div>
+
+        <div class="circle-image-container">
+            <div class="circle-image">
+                <a href="#">
+                <img src="./images/healthy recipes.jpg" alt="image 1">
+            </a>
+                <div class="circle-image-label">Healthy Recipes</div>
+            </div>
+
+            <div class="circle-image">
+                <a href="#">
+                <img src="./images/instant pot recipes.jpg" alt="image 2">
+            </a>
+                <div class="circle-image-label">Instant Pot</div>
+            </div>
+
+            <div class="circle-image">
+                <a href="#">
+                <img src="./images/5 ingredients.jpg" alt="image 3">
+            </a>
+                <div class="circle-image-label">5 ingredients</div>
+            </div>
+
+            <div class="circle-image">
+                <a href="#">
+                <img src="./images/meal preps.jpg" alt="image 4">
+            </a>
+                <div class="circle-image-label">Meal preps</div>
+            </div>
+
+            <div class="circle-image">
+                <a href="#">
+                <img src="./images/dinner recipes.jpg" alt="image 3">
+            </a>
+                <div class="circle-image-label">Dinner</div>
+            </div>
+
+            <div class="circle-image">
+                <a href="#">
+                <img src="./images/easy and quick recipes.jpg" alt="image 3">
+            </a>
+                <div class="circle-image-label">Easy and quick</div>
+            </div>
+
+            <div class="circle-image">
+                <a href="#">
+                <img src="./images/slow cooker.jpg" alt="image 3">
+            </a>
+                <div class="circle-image-label">Slow cooker</div>
+            </div>
+
+            <div class="circle-image">
+                <a href="#">
+                <img src="./images/vegetrian.jpg" alt="image 3">
+            </a>
+                <div class="circle-image-label">Vegeterian</div>
+            </div>
+       
+        </div>
+        <div class="search-container">
+            <div class="search-input">
+            <form id="searchForm" onsubmit="performSearch(); return false;">
+            <input type="text" id="searchInput" placeholder="&#128269; Search our recipes">
+            
+        </form>
+        </div>
+        <div id="searchResultsContainer"></div>
+            <span class="or-text">or</span>
+            <a href="#">
+            <button type="button">View all recipes</button>
+        </a>
+        </div>
+         <div class="recipes-container">
+        <div class="recipes-collection">
+            <h2>RECIPES COLLECTION</h2>
+            <ol class="recipes-list">
+                <li class="recipes-item"><a href="#" class="recipe-link">Vegan Recipes</a></li>
+                <li class="recipes-item"><a href="#" class="recipe-link">Meal Prep Recipes</a></li>
+                <li class="recipes-item"><a href="#" class="recipe-link">Quick and Easy Recipes</a></li>
+                <li class="recipes-item"><a href="#" class="recipe-link">Pasta Recipes</a></li>
+                <li class="recipes-item"><a href="#" class="recipe-link">Soup Recipes</a></li>
+                <li class="recipes-item"><a href="#" class="recipe-link">Instant Recipes</a></li>
+                <li class="recipes-item"><a href="#" class="recipe-link">Most Popular Recipes</a></li>
+            </ol>
+           <div class="chef-images">
+            <img src="./images/femalechef.jpg" alt="image 1">
+            <div class="male-chef">
+                <img src="./images/malechef.jpg" alt="image 1">
+               </div>
+           </div> 
+        </div>
+        
+
+        <div class="the-latest">
+            <h1>THE LATEST</h1>
+            <div class="post">
+                <img src="./images/slow cooker.jpg" alt="post image 1">
+                <div class="post-content">
+                    <h2>Ridiculously Good Air Fryer Chicken Breast</h2>
+                    <p>My go-to everyday air fryer chicken! Thinly sliced chicken breast pieces, coated to the max in spices, plus a bit of brown sugar and cornstarch, and air fried to golden, juicy perfection.</p>
+                    <p class="post-date">February 20, 2024</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="./images/dinner recipes.jpg" alt="post image 2">
+                <div class="post-content">
+                    <h2>Banza Chicken Bowls with Calabrian Chili Sauce</h2>
+                    <p>This bowl has it all! The crunch of the tomato cucumber salad, the thin slips of bitey red onion, the golden crisped air fryer chicken cut into tender little strips, a big pile of perfectly chewy Banza, and a dollop of tangy calabrian chile sauce on top.</p>
+                    <p class="post-date"> February 15, 2024</p>
+                </div>
+            </div>
+            <div class="post">
+                <img src="./images/soups.jpg" alt="post image 3">
+                <div class="post-content">
+                    <h2>Shortcut Sesame Butter Noodles</h2>
+                
+                <p>One of my favorite back-pocket recipes! Packaged noodles for ease, butter for creaminess, honey for sweetness, and sesame oil for depth. Just tangly slips of joy!</p>
+                <p class="post-date">February 13, 2024</p>
+            </div>
+            </div>
+        </div>
+    </div>
+      
+        </main>
+        <footer></footer>
+        <script src="script.js"></script>
+    </body>
+</html>

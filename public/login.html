@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap" rel="stylesheet">
+        <link href="style.css" rel="stylesheet" type="text/css">
+    </head>
+    <body>
+        <header>
+            <div class="logo">Your Best Recipes</div>
+        </header>
+        <main>
+            <div class="logo-area">
+                <a href="Home.html">
+                    <h1>Taste Bud Bliss</h1>
+                </a>
+                <nav>
+                    <ul>
+                        <li> <a href="Home.html">Home</a></li>
+                        <li> 
+                            <a href="recipes.html">Recipes</a>
+                        <div class="dropdown">
+                            <a href="recipes.html">view all recipes</a>
+                            <a href="#">vegan recipes</a>
+                            <a href="#">Meal Prep</a>
+                            <a href="#">Quick and Easy</a>
+                            <a href="#">Instant Recipes</a>
+                            <a href="#">Soup Recipes</a>
+                            <a href="#">Most Popular Recipes</a>
+                        </div>
+                    </li>
+                        <li> <a href="#">Contact</a></li>
+                        <li> <a href="login.html">Log In</a></li>
+                        <li> <a href="register.html">Register</a></li>
+                        
+                    </ul>
+                </nav>
+            </div>
+            <div class="login-box-container">
+                <div class="login-box">
+                    <h1>Login</h1>
+                    <form action="/login" method="post" id="loginForm">
+                        <input type="text" id="usernameInput" name="username" placeholder="username">
+                        <input type="password" id="passwordInput" name="password" placeholder="password">
+                        <button type="submit" class="login-button-color" onclick="performLogin(event)">Login</button>
+                    </form>
+                    <a href="register.html">Register now</a>
+            </div>
+            </div>
+        </main>
+        <footer></footer>
+        <script src="script.js"></script>
+    </body>
+</html>
