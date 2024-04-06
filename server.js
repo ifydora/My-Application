@@ -35,6 +35,8 @@ app.post('/comments', (req, res) => {
 const pages = [
     {id: 1, title: 'Home', url: '/'},
     {id: 2, title: 'Recipes', url: '/recipes.html'},
+    {id: 3, title: 'Vegetarian', url: '/vegetarian.html'},
+    {id: 4, title: 'Blog', url: '/blog.html'},
 ]
 app.get('/pages', (req, res) => {
     res.json(pages);
