@@ -182,7 +182,7 @@ async function performLogin(event) {
 
         if (data.success) {
             alert(data.message);
-            window.location.href = '/profile.html';
+            window.location.href = '/dashboard.html';
         } else {
             alert('Login failed. Please check your credentials.');
         }
@@ -460,6 +460,9 @@ async function performLogin(event) {
                 console.error('Error fetching blog posts:', error);
             });
         });
+
+        
+        
 
      
         

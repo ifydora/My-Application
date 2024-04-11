@@ -127,7 +127,7 @@ app.post('/login', async (req, res) => {
     }
    });
 
-   app.get('/profile.html', (req, res) => {
+   app.get('/dashboard.html', (req, res) => {
     res.send('Welcome');
    });
 

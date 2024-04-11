@@ -33,13 +33,3 @@
 
 
 
-fetch(`/post-comments/${post.id}`)
-.then(response => response.json())
-.then(comments => {
-    console.log('Fetched comments:', comments);
-    comments.forEach(comment => {
-        const commentElement = document.createElement('div');
-        commentElement.textContent = `${comment.username}: ${comment.content}`;
-        commentsContainer.appendChild(commentElement);
-    });
-});
